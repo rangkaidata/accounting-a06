@@ -44,7 +44,7 @@ function LandingPage(){
       <button 
         style="padding:10px 20px;
         display:inline-blok;
-        background-color: #;
+        background-color: #808080;
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
@@ -65,7 +65,7 @@ function LandingPage(){
     
     <footer>
         <small>&copy; 2023 Rangkaidata.com &#x2219; Datablok.id </small>
-        &nbsp; &#x2219; &nbsp;<a href="">GitHub.com</a>
+        &nbsp; &#x2219; &nbsp;<a href="https://github.com/rangkaidata/accounting-a06">GitHub.com</a>
     </footer>`;
 
   document.getElementById('landing_page').innerHTML=html;
