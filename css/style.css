@@ -1,0 +1,236 @@
+/*
+ * auth: budiono
+ * date: aug-31, 10:04, thu-2023;
+ * edit: sep-04, 21:55, mon-2023;
+ */
+
+html {
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 13px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 10px; }
+}
+
+input:focus,textarea:focus{
+  outline:none; //ini penting
+}
+
+body{
+  margin:0px;
+  padding:0px;
+  background-color:#F8F8FF;
+  font-family:sans;
+  color: #101010;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+}
+
+li {
+  margin-left:0.1rem;
+  margin-top:0.2rem;
+  height:1.5rem;
+}
+label{
+  display:inline-block;
+  width:8rem;
+}
+input[type=text],input[type=password],textarea,input[type=date]{
+  border-radius:7px;
+  padding-left:0.2rem;
+  padding-right:0.1rem;
+  border:1px solid grey;
+}
+input[type=text]:focus,input[type=password]:focus,textarea:focus,input[type=date]:focus{
+  color:black;
+  border:1px solid blue;
+}
+input:disabled{
+  color:#00008B; //darkblue
+  background-color:lightgrey;
+}
+input[type=text]:disabled, select:disabled{
+  color:#00008B;
+  background-color:#E0E0E0; /*#F0F0F0;*/
+}
+.div-center{
+  margin:0;
+  top:2rem;
+  left:50%;
+  position:absolute;
+  transform:translate(-50%,0)
+}
+.dropbtn {}
+.dropdown-content {}
+.btn_hide:before{
+  content: "\003C \0020";
+}
+
+.btn_refresh:before{
+  content: "\25CB \0020 Refresh";
+}
+
+/*table*/
+table{
+  border-collapse: collapse;
+  width:100%;
+
+}
+td{
+  padding:0.1rem 0.5rem 0.1rem 0.5rem;
+  border:1px solid lightgrey;
+  /*word-wrap:break-word;*/
+  /*word-wrap:break-all;*/
+  white-space:pre-wrap;
+  cursor: pointer;
+}
+th{
+  text-align:center;
+  border:1px solid lightgrey;
+  color:#101010;
+  padding-left:0.5rem;
+  padding-right:1rem;
+}
+button,input[type=button]{
+  margin:0.1rem;
+  background-color:#d5dbdb;
+  border-radius:5px;
+  border:1px solid lightgrey;
+}
+button:hover,input[type=button]:hover{
+  border:1px solid grey;
+  cursor:pointer;
+  border-radius:5px;
+}
+.btn_search:before{
+  content: "\2299 \0020 Search";
+}
+.btn_new:before{
+  content: "\25FB \0020 New";
+}
+.btn_more:before{
+  content: "\22EE \0020";
+}
+.btn_save:before{
+  content: "\2714 \0020 Save";
+}
+.btn_back:before{
+  content: "\2718 \0020 Back";
+}
+.btn_delete:before{
+  content: "\2297 \0020 Delete";
+}
+.btn_export:before{
+  content: "\21C8 \0020 Export";
+}
+.btn_import:before{
+  content: "\21CA \0020 Import";
+}
+.btn_preview:before{
+  content: "\2295 \0020 Preview";
+}
+.btn_edit:before{
+  content: "\2298 \0020 Edit";
+}
+.btn_find:before{
+  content: "\279C";
+}
+.btn_cancel:before{
+  content: "\2718 \0020 Cancel";
+}
+#btn_change:before{
+  content: '\2298 \0020 Change';
+}
+#btn_delete:before{
+  content: '\2297 \0020 Delete';
+}
+#btn_open:before{
+  content: '\279C \0020 Open';
+}
+#btn_first:before{
+  content: '\22A2';
+}
+#btn_last:after{
+  content: '\22A3';
+}
+#btn_detail:before{
+  content: '\279C \0020 Show';
+}
+#btn_drawer:before{
+  content: 'App Drawer \279C ';
+}
+#btn_find:before{
+  content: "\279C";
+}
+#btn_select:before{
+  content: "\2714 \0020";
+}
+#btn_add:after{
+  content: "\2795";
+}
+#btn_remove:before{
+  content: "\2796"; /*2715*/
+}
+#btn_remove, #btn_find, #btn_add{
+  border-radius:30px;
+}
+input:disabled{
+  color:#00008B; /*darkblue*/
+  background-color:lightgrey;
+}
+input[type=text]:disabled, select:disabled{
+  color:#00008B;
+  background-color:#E0E0E0; /*#F0F0F0;*/
+}
+details{
+  margin-top:0.5rem;
+}
+summary{
+  border:1px solid #D3D3D3;
+  padding-left:0.5rem;
+  margin-top:0.1rem;
+  color: #505050;
+  font-weight:bold;
+  background-color:#F5F5F5;
+}
+summary:hover{
+  color:blue;
+}
+.required{
+  color:#B21807;
+  font-weight:normal;
+}
+.close {
+  position:relative;
+  right:0;
+  padding:0;
+  margin:1rem;
+  border-radius:30px;
+}
+.close:hover {
+  color:white;
+  background-color:#FF5050;
+}
+
+
+footer {
+    background-color: #808080;
+    color: #fff;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    height:50px;
+    bottom: 0;
+    position: absolute;
+    width:100%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+}
